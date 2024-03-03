@@ -12,50 +12,50 @@
 /*============     Shell_Init       ==============*/
 /*==================================================*/
 
-int main(int abc, char **avb, char **envb);
-void prompts(void);
-void handles(int signalss);
-void _EOFs(char *buffers);
-void shell_exits(char **commands);
+int main(int _ac, char **_av, char **_env);
+void _prompt(void);
+void _handle(int signals);
+void _EO_F(char *_buffer);
+void _shell_exit(char **_command_);
 
 /*==================================================*/
 /*============     create_child       ==============*/
 /*==================================================*/
 
-void create_childs(char **commands, char *names, char **envs, int cicles);
-int change_dir(const char *path);
+void _create_child(char **_command, char *_name, char **_env, int _cicles);
+int _change_dir(const char *_path);
 
 /*==================================================*/
 /*============        Execute       ==============*/
 /*==================================================*/
 
-void execute(char **command, char *name, char **env, int cicles);
-void print_env(char **env);
-char **_getPATH(char **env);
-void msgerror(char *name, int cicles, char **command);
+void _execute(char **_command, char *_name, char **_env, int _cicles);
+void _print_env(char **_env);
+char **_getPAT_H(char **_env);
+void _msgerror(char *_name, int _cicles, char **_command);
 
 /*==================================================*/
 /*============          Tokening      ==============*/
 /*==================================================*/
 
-char **tokening(char *buffer, const char *s);
+char **_tokening(char *_buffer, const char *_s);
 
 /*==================================================*/
 /*============     Free Memory      ==============*/
 /*==================================================*/
 
-void free_dp(char **command);
-void free_exit(char **command);
+void _free_dp(char **_command);
+void _free_exit(char **_command);
 
 /*==================================================*/
 /*============  Auxiliar_Functions    ==============*/
 /*==================================================*/
 
-int _strcmp(char *s1, char *s2);
-unsigned int _strlen(char *s);
-char *_strcpy(char *dest, char *src);
-int _atoi(char *s);
-char *_strcat(char *dest, char *src);
+int _strcm_p(char *_s1, char *_s2);
+unsigned int _strle_n(char *_s);
+char *_strcp_y(char *_dest, char *_src);
+int _ato_i(char *_s);
+char *_strca_t(char *_dest, char *_src);
 
 /*============ END      ==============*/
 
