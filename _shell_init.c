@@ -63,7 +63,7 @@ void _prompt(void)
  * Return: Nothing.
  */
 
-void handle(int signals)
+void _handle(int signals)
 {
 	(void)signals;
 	write(STDOUT_FILENO, "\nHell_Shell>> ", 14);
